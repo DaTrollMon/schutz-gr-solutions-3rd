@@ -40,3 +40,31 @@ def interval(dx) -> float:
     """Spacetime interval Delta s^2 = eta_{ab} dx^a dx^b for a 4-vector (dt, dx, dy, dz)."""
     dx = np.asarray(dx, dtype=float)
     return float(dx @ ETA @ dx)
+
+
+def interval_tx(dt, dx):
+    """Delta s^2 = -dt^2 + dx^2 in a 1+1 dimensional diagram (works symbolically too)."""
+    return -dt**2 + dx**2
+
+
+def lorentz(t, x, v):
+    """Coordinates (t_bar, x_bar) of event (t, x) for observer O_bar moving at v along +x (Schutz eq. 1.12).
+
+    t_bar = gamma (t - v x),  x_bar = gamma (x - v t).  Works with numbers, arrays or sympy.
+    """
+    g = gamma(v)
+    return g * (t - v * x), g * (x - v * t)
+
+
+def inverse_lorentz(t_bar, x_bar, v):
+    """Inverse of :func:`lorentz`: O's coordinates (t, x) of an event O_bar labels (t_bar, x_bar)."""
+    g = gamma(v)
+    return g * (t_bar + v * x_bar), g * (x_bar + v * t_bar)
+
+
+def velocity_seen_by(w, v):
+    """Velocity measured by O_bar (moving at v relative to O) of a body O sees moving at w.
+
+    w_bar = (w - v) / (1 - w v)   (Schutz eq. 1.13 with v -> -v).
+    """
+    return (w - v) / (1 - w * v)
