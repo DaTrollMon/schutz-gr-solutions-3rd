@@ -7,7 +7,7 @@ name = "schutz-gr"
 version = "0.1.0"
 description = "Worked solutions to Schutz, A First Course in General Relativity (3rd ed.), plus supporting code."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
     "numpy",
     "scipy",
