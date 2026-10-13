@@ -7,6 +7,7 @@ Worked solutions to problems from Bernard Schutz, *A First Course in General Rel
 ```
 Ch.1/            Chapter 1 notebooks — Special relativity
 Ch.2/            Chapter 2 notebooks — Vector analysis in special relativity
+Ch.3/            Chapter 3 notebooks — Tensor analysis in special relativity
 src/schutz_gr/   Shared Python code imported by the notebooks
 tests/           Tests for the shared code
 ```
@@ -86,6 +87,47 @@ Notebooks hold the solutions; anything reusable across problems goes in `src/sch
 | [2.33](Ch.2/Problem_2.33.ipynb) | inverse Compton scattering off a cosmic-ray proton | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.2/Problem_2.33.ipynb) |
 | [2.34](Ch.2/Problem_2.34.ipynb) | the dot product is bilinear | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.2/Problem_2.34.ipynb) |
 | [2.35](Ch.2/Problem_2.35.ipynb) | the boosted basis is orthonormal | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.2/Problem_2.35.ipynb) |
+
+## Chapter 3 notebooks — Tensor analysis in special relativity
+
+| Problem | Topic | |
+|---|---|---|
+| [3.1](Ch.3/Problem_3.1.ipynb) | the summation convention needs distinct dummy indices | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.1.ipynb) |
+| [3.2](Ch.3/Problem_3.2.ipynb) | one-forms form a vector space | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.2.ipynb) |
+| [3.3](Ch.3/Problem_3.3.ipynb) | linearity of a one-form, by hand and with numbers | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.3.ipynb) |
+| [3.4](Ch.3/Problem_3.4.ipynb) | a one-form is fixed by its values on a basis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.4.ipynb) |
+| [3.5](Ch.3/Problem_3.5.ipynb) | why the contraction $A^\alpha p_\alpha$ is frame-independent | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.5.ipynb) |
+| [3.6](Ch.3/Problem_3.6.ipynb) | a one-form basis that is *not* dual to $\{\vec e_\alpha\}$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.6.ipynb) |
+| [3.7](Ch.3/Problem_3.7.ipynb) | how the basis one-forms transform | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.7.ipynb) |
+| [3.8](Ch.3/Problem_3.8.ipynb) | drawing $\tilde dt$ and $\tilde dx$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.8.ipynb) |
+| [3.9](Ch.3/Problem_3.9.ipynb) | reading a gradient off a contour map | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.9.ipynb) |
+| [3.10](Ch.3/Problem_3.10.ipynb) | $\partial x^\alpha/\partial x^\beta$ and the inverse property | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.10.ipynb) |
+| [3.11](Ch.3/Problem_3.11.ipynb) | comma notation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.11.ipynb) |
+| [3.12](Ch.3/Problem_3.12.ipynb) | normal one-forms to a plane | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.12.ipynb) |
+| [3.13](Ch.3/Problem_3.13.ipynb) | $\tilde df$ is normal to surfaces of constant $f$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.13.ipynb) |
+| [3.14](Ch.3/Problem_3.14.ipynb) | the outer product is not commutative | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.14.ipynb) |
+| [3.15](Ch.3/Problem_3.15.ipynb) | from Eq. (3.23) to Eq. (3.24) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.15.ipynb) |
+| [3.16](Ch.3/Problem_3.16.ipynb) | symmetric and antisymmetric parts | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.16.ipynb) |
+| [3.17](Ch.3/Problem_3.17.ipynb) | when a $\binom02$ tensor is an outer product; $\binom11$ tensors as maps | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.17.ipynb) |
+| [3.18](Ch.3/Problem_3.18.ipynb) | lowering and raising with the metric | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.18.ipynb) |
+| [3.19](Ch.3/Problem_3.19.ipynb) | the inverse metric, and the inner product of one-forms | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.19.ipynb) |
+| [3.20](Ch.3/Problem_3.20.ipynb) | why Euclidean vectors and one-forms look alike | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.20.ipynb) |
+| [3.21](Ch.3/Problem_3.21.ipynb) | outward normals in the $t$–$x$ plane | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.21.ipynb) |
+| [3.22](Ch.3/Problem_3.22.ipynb) | vectors as linear functions of one-forms | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.22.ipynb) |
+| [3.23](Ch.3/Problem_3.23.ipynb) | $\binom MN$ tensors form a vector space, with a product basis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.23.ipynb) |
+| [3.24](Ch.3/Problem_3.24.ipynb) | symmetric parts, index gymnastics, and $\eta^\alpha{}_\beta$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.24.ipynb) |
+| [3.25](Ch.3/Problem_3.25.ipynb) | a full contraction is a scalar | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.25.ipynb) |
+| [3.26](Ch.3/Problem_3.26.ipynb) | contractions with symmetric and antisymmetric tensors | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.26.ipynb) |
+| [3.27](Ch.3/Problem_3.27.ipynb) | lowering preserves antisymmetry; equal one-forms give equal vectors | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.27.ipynb) |
+| [3.28](Ch.3/Problem_3.28.ipynb) | the gradient of a tensor | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.28.ipynb) |
+| [3.29](Ch.3/Problem_3.29.ipynb) | the Leibniz rule for $\nabla$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.29.ipynb) |
+| [3.30](Ch.3/Problem_3.30.ipynb) | calculus with vector fields | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.30.ipynb) |
+| [3.31](Ch.3/Problem_3.31.ipynb) | the projection tensor $P_{\mu\nu} = \eta_{\mu\nu} + U_\mu U_\nu$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.31.ipynb) |
+| [3.32](Ch.3/Problem_3.32.ipynb) | the general definition of a Lorentz transformation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.32.ipynb) |
+| [3.33](Ch.3/Problem_3.33.ipynb) | the Lorentz group | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.33.ipynb) |
+| [3.34](Ch.3/Problem_3.34.ipynb) | null coordinates $u = t - x$, $v = t + x$ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DaTrollMon/schutz-gr-solutions-3rd/blob/main/Ch.3/Problem_3.34.ipynb) |
+
+> Problem 3.9 needs Fig. 3.5 (an isotherm map). The notebook gives the method, a worked stand-in example, and a cell for your own readings.
 
 ## Local setup
 
