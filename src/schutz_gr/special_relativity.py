@@ -68,3 +68,48 @@ def velocity_seen_by(w, v):
     w_bar = (w - v) / (1 - w v)   (Schutz eq. 1.13 with v -> -v).
     """
     return (w - v) / (1 - w * v)
+
+
+# --------------------------------------------------------------------------- Chapter 2 helpers
+
+def minkowski_dot(A, B):
+    """Scalar product A·B = −A⁰B⁰ + A¹B¹ + A²B² + A³B³ (Schutz eq. 2.26). Numbers, arrays or sympy."""
+    if isinstance(A, sp.MatrixBase) or isinstance(B, sp.MatrixBase) or any(isinstance(a, sp.Basic) for a in list(A) + list(B)):
+        return -A[0] * B[0] + A[1] * B[1] + A[2] * B[2] + A[3] * B[3]
+    A = np.asarray(A, dtype=float)
+    B = np.asarray(B, dtype=float)
+    return float(A @ ETA @ B)
+
+
+def four_velocity(v):
+    """Four-velocity U = γ(1, v) for a 3-velocity v (sequence of 3 numbers or sympy expressions)."""
+    v = list(v)
+    v2 = sum(c * c for c in v)
+    symbolic = any(isinstance(c, sp.Basic) for c in v)
+    g = 1 / sp.sqrt(1 - v2) if symbolic else 1.0 / np.sqrt(1.0 - float(v2))
+    if not symbolic and v2 >= 1:
+        raise ValueError("speed must satisfy |v| < 1")
+    out = [g] + [g * c for c in v]
+    return sp.Matrix(out) if symbolic else np.array(out, dtype=float)
+
+
+def boost_general(v):
+    """Lorentz boost Λ^ᾱ_β to a frame moving with 3-velocity v (any direction, axes kept parallel).
+
+    Λ⁰₀ = γ,  Λ⁰ᵢ = Λⁱ₀ = −γ vᵢ,  Λⁱⱼ = δᵢⱼ + (γ − 1) vᵢ vⱼ / v².
+    Returns a sympy Matrix if any component is symbolic, else a numpy array.
+    """
+    v = list(v)
+    symbolic = any(isinstance(c, sp.Basic) for c in v)
+    v2 = sum(c * c for c in v)
+    if v2 == 0:
+        return sp.eye(4) if symbolic else np.eye(4)
+    g = 1 / sp.sqrt(1 - v2) if symbolic else 1.0 / np.sqrt(1.0 - float(v2))
+    L = sp.zeros(4, 4) if symbolic else np.zeros((4, 4))
+    L[0, 0] = g
+    for i in range(3):
+        L[0, i + 1] = -g * v[i]
+        L[i + 1, 0] = -g * v[i]
+        for j in range(3):
+            L[i + 1, j + 1] = (1 if i == j else 0) + (g - 1) * v[i] * v[j] / v2
+    return L
